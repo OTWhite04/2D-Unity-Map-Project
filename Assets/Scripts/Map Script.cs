@@ -7,6 +7,7 @@ public class MapScript : MonoBehaviour
 {
     //creating the tilemap and tilebases for the player, chests and doors.
     public Tilemap Tilemap;
+    public TileBase Wall;
     public TileBase Player;
     public TileBase Chest;
     public TileBase Door;
@@ -38,7 +39,7 @@ public class MapScript : MonoBehaviour
 
     void LoadPremadeMap()
     {
-        
+       
     }
   
 }
