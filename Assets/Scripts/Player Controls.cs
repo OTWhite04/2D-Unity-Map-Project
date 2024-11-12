@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.Tilemaps;
 public class PlayerControls : MonoBehaviour
 {
     private PlayerMovement controls;
@@ -31,6 +31,10 @@ public class PlayerControls : MonoBehaviour
 
     }
 
+    private bool CanMove(Vector2 direction)
+    {
+
+    }
 
 
 }
