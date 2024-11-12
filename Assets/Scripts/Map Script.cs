@@ -27,14 +27,25 @@ public class MapScript : MonoBehaviour
         LoadPremadeMap();
     }
 
-    void GenerateMapString()
+    void GenerateMap()
     {
-
+        
     }
 
-   void ConvertMapToTileMap()
+   void DrawTileMap()
     {
+        for (int y = 0; y < Map.GetLength(1); y++)
+        {
+            for (int x = 0; x < Map.GetLength(0); x++)
+            {
+                Vector3Int Cellposition = new Vector3Int(x, y, 0);
+                if (Map[x,y] ==1)
+                {
+                    Tilemap.SetTile(Cellposition, Wall);
+                }
 
+            }
+        }
     }
 
     void LoadPremadeMap()
