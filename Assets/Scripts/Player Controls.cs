@@ -23,7 +23,7 @@ public class PlayerControls : MonoBehaviour
 
     void Start()
     {
-        controls.Main.Movement.preformed += ctx => Move(ctx.ReadValue<Vector2>());
+        //controls.Main.Movement.preformed += ctx => Move(ctx.ReadValue<Vector2>());
     }
 
     private void Move(Vector2 direction)
@@ -33,7 +33,7 @@ public class PlayerControls : MonoBehaviour
 
     private bool CanMove(Vector2 direction)
     {
-
+        return false;
     }
 
 
